@@ -1,5 +1,5 @@
 [package]
-name = "security_tests"
+name = "hf_param_size_test"
 version = "0.0.1"
 edition = "2024"
 
@@ -15,7 +15,7 @@ opt-level = 's'
 panic = "abort"
 
 [dependencies]
-xrpl-std = { path = "../../xrpl-std" }
+xrpl-std = { git = "https://github.com/ripple/xrpl-wasm-stdlib.git", package = "xrpl-wasm-stdlib" }
 
 [profile.dev]
 panic = "abort"
